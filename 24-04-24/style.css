@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    width: 20%;
+    height: 45%;
+
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: aliceblue;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px blueviolet;
+    padding: 10px ;
+
+}
+.card>img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-family: Helvetica;
+
+    /* we can only give left and right margin for inline element which is img  */
+    /* you cannot add height to the top or bottom padding or margin of an inline element. */
+}
+
+.card>h1{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.card>h2{
+    font-weight: 500;
+    font-weight: 15px;
+}
+
+.card>p{
+    margin-top: 5px;
+}
+
+.card>button{
+    color: white;
+    background: linear-gradient(to right, #000046, #1cb5e0,rgb(130, 58, 58));
+
+    margin-top: 10px;
+    padding: 10px 20px;
+    
+    font-weight: 600;
+
+    border:none;
+    border-radius: 5px;
+    box-shadow: 3px 0px 5px blue, -3px 0px 5px white;
+}
+
+.card>button:hover{
+    cursor:pointer;
+    background: linear-gradient(to right, #f0f2f0, #000c40);
+}
